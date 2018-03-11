@@ -1,0 +1,25 @@
+{
+    "name": "qlimix/logging",
+    "type": "package",
+    "license": "LGPL-3.0-only",
+    "authors": [
+        {
+            "name": "frank",
+            "email": "frank@qlimix.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Qlimix\\Log\\": "src/"
+        }
+    },
+    "require-dev": {
+        "psr/http-message": "^1.0"
+    },
+    "suggest": {
+        "psr/http-message": "Request/response logging"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
