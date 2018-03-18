@@ -4,13 +4,47 @@ namespace Qlimix\Log\Handler;
 
 final class Level
 {
+    /**
+     * System unusable
+     */
     private const LEVEL_EMERGENCY = 'emergency';
+
+    /**
+     * Service down
+     */
     private const LEVEL_ALERT = 'alert';
+
+    /**
+     * Application component behaving unexpected
+     */
     private const LEVEL_CRITICAL = 'critical';
+
+    /**
+     * Errors the system returns
+     */
     private const LEVEL_ERROR = 'error';
+
+    /**
+     * Exceptional occurrences but not errors
+     * Something undesirable is going on
+     *
+     * e.g. migrating old api's
+     */
     private const LEVEL_WARNING = 'warning';
+
+    /**
+     * Something significant happened
+     */
     private const LEVEL_NOTICE = 'notice';
+
+    /**
+     * System behaviour/interesting events
+     */
     private const LEVEL_INFO = 'info';
+
+    /**
+     * Debug information
+     */
     private const LEVEL_DEBUG = 'debug';
 
     /** @var string */
