@@ -14,10 +14,8 @@
         }
     },
     "require-dev": {
-        "psr/http-message": "^1.0"
     },
     "suggest": {
-        "psr/http-message": "Request/response logging"
     },
     "config": {
         "sort-packages": true
