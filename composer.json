@@ -14,20 +14,14 @@
         }
     },
     "require-dev": {
-        "psr/http-message": "^1.0",
-        "qlimix/queue": "dev-master"
+        "psr/http-message": "^1.0"
     },
     "suggest": {
-        "psr/http-message": "Request/response logging",
-        "qlimix/queue": "Queue log handler"
+        "psr/http-message": "Request/response logging"
     },
     "config": {
         "sort-packages": true
     },
     "repositories": [
-        {
-            "type": "vcs",
-            "url":  "git@bitbucket.org:qlimix/queue.git"
-        }
     ]
 }
