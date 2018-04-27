@@ -13,13 +13,7 @@
             "Qlimix\\Log\\": "src/"
         }
     },
-    "require-dev": {
-    },
-    "suggest": {
-    },
     "config": {
         "sort-packages": true
-    },
-    "repositories": [
-    ]
+    }
 }
