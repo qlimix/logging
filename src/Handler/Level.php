@@ -52,8 +52,6 @@ final class Level
 
     /**
      * @param string $level
-     *
-     * @throws \InvalidArgumentException
      */
     private function __construct(string $level)
     {
@@ -62,8 +60,6 @@ final class Level
 
     /**
      * @return Level
-     *
-     * @throws \InvalidArgumentException
      */
     public static function createEmergency(): Level
     {
@@ -72,8 +68,6 @@ final class Level
 
     /**
      * @return Level
-     *
-     * @throws \InvalidArgumentException
      */
     public static function createAlert(): Level
     {
@@ -82,8 +76,6 @@ final class Level
 
     /**
      * @return Level
-     *
-     * @throws \InvalidArgumentException
      */
     public static function createCritical(): Level
     {
@@ -92,8 +84,6 @@ final class Level
 
     /**
      * @return Level
-     *
-     * @throws \InvalidArgumentException
      */
     public static function createError(): Level
     {
@@ -102,8 +92,6 @@ final class Level
 
     /**
      * @return Level
-     *
-     * @throws \InvalidArgumentException
      */
     public static function createWarning(): Level
     {
@@ -112,8 +100,6 @@ final class Level
 
     /**
      * @return Level
-     *
-     * @throws \InvalidArgumentException
      */
     public static function createNotice(): Level
     {
@@ -122,8 +108,6 @@ final class Level
 
     /**
      * @return Level
-     *
-     * @throws \InvalidArgumentException
      */
     public static function createInfo(): Level
     {
@@ -132,8 +116,6 @@ final class Level
 
     /**
      * @return Level
-     *
-     * @throws \InvalidArgumentException
      */
     public static function createDebug(): Level
     {
