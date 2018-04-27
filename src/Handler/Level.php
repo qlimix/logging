@@ -55,12 +55,8 @@ final class Level
      *
      * @throws \InvalidArgumentException
      */
-    public function __construct(string $level)
+    private function __construct(string $level)
     {
-        if (!\in_array($level, (new \ReflectionClass($this))->getConstants(), true)) {
-            throw new \InvalidArgumentException('Invalid level');
-        }
-
         $this->level = $level;
     }
 
