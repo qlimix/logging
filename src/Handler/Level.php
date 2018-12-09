@@ -53,7 +53,7 @@ final class Level
     /**
      * @param string $level
      */
-    private function __construct(string $level)
+    public function __construct(string $level)
     {
         $this->level = $level;
     }
