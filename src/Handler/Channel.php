@@ -32,7 +32,7 @@ final class Channel
         if (preg_match('~'.self::REGEX.'~', $name)) {
             throw new InvalidArgumentException('Invalid channel name');
         }
-        
+
         $this->name = $name;
     }
 }
