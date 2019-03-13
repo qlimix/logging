@@ -2,6 +2,8 @@
 
 namespace Qlimix\Log\Handler;
 
+use InvalidArgumentException;
+
 final class Channel
 {
     private const REGEX = '^[A-Za-z]{1,}[A-Za-z0-9\.\_\-]{1,}[^\.\_\-]$';
@@ -10,33 +12,27 @@ final class Channel
     private $name;
 
     /**
-     * @param string $name
-     *
-     * @throws \InvalidArgumentException
+     * @throws InvalidArgumentException
      */
     public function __construct(string $name)
     {
         $this->setName($name);
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
     /**
-     * @param string $name
-     *
-     * @throws \InvalidArgumentException
+     * @throws InvalidArgumentException
      */
     private function setName(string $name): void
     {
         if (preg_match('~'.self::REGEX.'~', $name)) {
-            throw new \InvalidArgumentException('Invalid channel name');
+            throw new InvalidArgumentException('Invalid channel name');
         }
+        
         $this->name = $name;
     }
 }
