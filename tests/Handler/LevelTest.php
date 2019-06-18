@@ -86,4 +86,14 @@ final class LevelTest extends TestCase
 
         $this->assertSame('debug', $level->getLevel());
     }
+
+    /**
+     * @test
+     */
+    public function shouldEqual(): void
+    {
+        $level = new Level('foobar');
+
+        $this->assertTrue($level->equals($level));
+    }
 }

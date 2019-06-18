@@ -95,6 +95,11 @@ final class Level
         return new self(self::LEVEL_DEBUG);
     }
 
+    public function equals(Level $level): bool
+    {
+        return $level->getLevel() === $this->level;
+    }
+
     public function getLevel(): string
     {
         return $this->level;

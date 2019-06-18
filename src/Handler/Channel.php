@@ -20,6 +20,11 @@ final class Channel
         $this->guard($name);
     }
 
+    public function equals(Channel $channel): bool
+    {
+        return $channel->getName() === $this->name;
+    }
+
     public function getName(): string
     {
         return $this->name;

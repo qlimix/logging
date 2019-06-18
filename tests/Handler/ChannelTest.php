@@ -22,6 +22,16 @@ final class ChannelTest extends TestCase
 
     /**
      * @test
+     */
+    public function shouldEqual(): void
+    {
+        $channel = new Channel('foobar');
+
+        $this->assertTrue($channel->equals($channel));
+    }
+
+    /**
+     * @test
      *
      * @dataProvider incorrectChannelNameProvider
      */
