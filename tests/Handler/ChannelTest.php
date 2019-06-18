@@ -15,8 +15,9 @@ final class ChannelTest extends TestCase
      */
     public function shouldCreateChannel(string $name): void
     {
-        new Channel($name);
-        $this->addToAssertionCount(1);
+        $channel = new Channel($name);
+
+        $this->assertSame($name, $channel->getName());
     }
 
     /**
