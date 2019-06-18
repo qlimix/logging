@@ -1,7 +1,15 @@
 {
     "name": "qlimix/logging",
-    "type": "package",
-    "license": "LGPL-3.0-only",
+    "type": "library",
+    "description": "Logging to specific levels and channels",
+    "license": "MIT",
+    "keywords": [
+        "logging",
+        "log"
+    ],
+    "require": {
+        "php": ">=7.2"
+    },
     "authors": [
         {
             "name": "frank",
@@ -13,7 +21,15 @@
             "Qlimix\\Log\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Qlimix\\Tests\\Log\\": "tests/"
+        }
+    },
     "config": {
         "sort-packages": true
+    },
+    "require-dev": {
+        "qlimix/code-standard": "^1.0"
     }
 }
