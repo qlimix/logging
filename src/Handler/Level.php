@@ -47,8 +47,7 @@ final class Level
      */
     private const LEVEL_DEBUG = 'debug';
 
-    /** @var string */
-    private $level;
+    private string $level;
 
     public function __construct(string $level)
     {
