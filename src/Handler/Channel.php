@@ -9,8 +9,7 @@ final class Channel
 {
     private const REGEX = '^[A-Za-z]{1,}[A-Za-z0-9\.\_\-]{1,}[a-zA-Z]$';
 
-    /** @var string */
-    private $name;
+    private string $name;
 
     /**
      * @throws InvalidArgumentException
