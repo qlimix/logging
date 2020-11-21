@@ -8,10 +8,10 @@
         "log"
     ],
     "require": {
-        "php": ">=7.4"
+        "php": ">7.4"
     },
     "require-dev": {
-        "qlimix/code-standard": "^2.0"
+        "qlimix/code-standard": "^3.0"
     },
     "authors": [
         {
