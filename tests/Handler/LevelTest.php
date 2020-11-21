@@ -7,93 +7,66 @@ use Qlimix\Log\Handler\Level;
 
 final class LevelTest extends TestCase
 {
-    /**
-     * @test
-     */
-    public function shouldCreateEmergencyLevel(): void
+    public function testShouldCreateEmergencyLevel(): void
     {
         $level = Level::createEmergency();
 
-        $this->assertSame('emergency', $level->getLevel());
+        self::assertSame('emergency', $level->getLevel());
     }
 
-    /**
-     * @test
-     */
-    public function shouldCreateAlertLevel(): void
+    public function testShouldCreateAlertLevel(): void
     {
         $level = Level::createAlert();
 
-        $this->assertSame('alert', $level->getLevel());
+        self::assertSame('alert', $level->getLevel());
     }
 
-    /**
-     * @test
-     */
-    public function shouldCreateCriticalLevel(): void
+    public function testShouldCreateCriticalLevel(): void
     {
         $level = Level::createCritical();
 
-        $this->assertSame('critical', $level->getLevel());
+        self::assertSame('critical', $level->getLevel());
     }
 
-    /**
-     * @test
-     */
-    public function shouldCreateErrorLevel(): void
+    public function testShouldCreateErrorLevel(): void
     {
         $level = Level::createError();
 
-        $this->assertSame('error', $level->getLevel());
+        self::assertSame('error', $level->getLevel());
     }
 
-    /**
-     * @test
-     */
-    public function shouldCreateWarningLevel(): void
+    public function testShouldCreateWarningLevel(): void
     {
         $level = Level::createWarning();
 
-        $this->assertSame('warning', $level->getLevel());
+        self::assertSame('warning', $level->getLevel());
     }
 
-    /**
-     * @test
-     */
-    public function shouldCreateNoticeLevel(): void
+    public function testShouldCreateNoticeLevel(): void
     {
         $level = Level::createNotice();
 
-        $this->assertSame('notice', $level->getLevel());
+        self::assertSame('notice', $level->getLevel());
     }
 
-    /**
-     * @test
-     */
-    public function shouldCreateInfoLevel(): void
+    public function testShouldCreateInfoLevel(): void
     {
         $level = Level::createInfo();
 
-        $this->assertSame('info', $level->getLevel());
+        self::assertSame('info', $level->getLevel());
     }
 
-    /**
-     * @test
-     */
-    public function shouldCreateDebugLevel(): void
+    public function testShouldCreateDebugLevel(): void
     {
         $level = Level::createDebug();
 
-        $this->assertSame('debug', $level->getLevel());
+        self::assertSame('debug', $level->getLevel());
     }
 
-    /**
-     * @test
-     */
-    public function shouldEqual(): void
+    public function testShouldEqual(): void
     {
         $level = new Level('foobar');
 
-        $this->assertTrue($level->equals($level));
+        self::assertTrue($level->equals($level));
     }
 }
